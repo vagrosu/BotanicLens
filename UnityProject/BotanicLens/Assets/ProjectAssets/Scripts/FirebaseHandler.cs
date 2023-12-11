@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,7 +23,6 @@ public class FirebaseHandler
             FirebaseApp app = FirebaseApp.DefaultInstance;
             databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
             string collectionName = "inventory";
-            databaseReference.Child("inventory").Child("2343432").SetValueAsync("Cactus");
             RetrieveCollectionElements(databaseReference.Child(collectionName));
         });
     }
