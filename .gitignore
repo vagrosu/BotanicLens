@@ -24,7 +24,7 @@ gcs_key_file.json
 *_unity_separate/
 output/
 output_unpack*/
-**/UnityProject/BotanicLens/Assets/Firebase/**
+UnityProject/BotanicLens/Assets/Firebase/**
 
 # Windows ignore
 vcpkg
