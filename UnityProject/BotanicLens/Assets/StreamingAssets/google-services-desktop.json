@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "171085619099",
+    "firebase_url": "https://botaniclens-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "botaniclens",
     "storage_bucket": "botaniclens.appspot.com"
   },
