@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCLpvUQfbqAClJACPDn0xv2V8ZzYFa3dHo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>171085619099</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.botaniclens.botaniclens</string>
+	<key>PROJECT_ID</key>
+	<string>botaniclens</string>
+	<key>STORAGE_BUCKET</key>
+	<string>botaniclens.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:171085619099:ios:67196467015e6eca248b3e</string>
+</dict>
+</plist>
