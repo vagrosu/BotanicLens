@@ -10,6 +10,7 @@ Figma design: [🪴BotanicLens🪴](https://www.figma.com/file/9BYTaUDRCN7mzt1kW
 
 ## Week 09
 Self made plant models: [Cactus](Models/Cactus), [Echeveria](Models/echeveria)
+Inceput pe branch-ul feature/taptoplace feature pentru manipulat modelele pe baza touch-ului, de finalizat pe saptamana 10.
 
 ## Week 10
 Self made plant models: [Bamboo](Models/Bamboo), [Bonsai](Models/Bonsai)
