@@ -14,3 +14,5 @@ Inceput pe branch-ul feature/taptoplace feature pentru manipulat modelele pe baz
 
 ## Week 10
 Self made plant models: [Bamboo](Models/Bamboo), [Bonsai](Models/Bonsai)
+
+De asemenea, inceput zona de logica: adaugat doua noi scene - StartMenu si InventoryMenu -, tranzitia dintre acestea, aparitia dinamica a unor componente cu nume de plante in ele, folosit Firebase pentru a crea un database, realizat conexiunea cu aceasta prin scriptul FirebaseHandler. Ulterior, vom lua din baza de date denumiri si eventual vom salva modelele intr-un storage in Firebase.
