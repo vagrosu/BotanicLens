@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,7 +10,11 @@ public class PopulateInventory : MonoBehaviour
     List<string> plants = new List<string>
     {
         "Cactus",
-        "Orchid"
+        "Orchid",
+        "Bonsai",
+        "Echeveria",
+        "Bamboo",
+        "Yucca"
     };
 
     void Start()
@@ -23,14 +28,14 @@ public class PopulateInventory : MonoBehaviour
 
             // Set the panel's properties
             RectTransform menuItemRectTransform = menuItem.GetComponent<RectTransform>();
-            menuItemRectTransform.sizeDelta = new Vector2(400, 300); // Set the panel size
-            menuItemRectTransform.anchoredPosition = new Vector2(-200 + 500 * i, 100); 
+            menuItemRectTransform.sizeDelta = new Vector2(400, 400); // Set the panel size
+            menuItemRectTransform.anchoredPosition = new Vector2(-200 + 500 * (i % 2), -300 + 600 * Convert.ToInt32(i/2)); 
 
             GameObject plantName = new GameObject(plants[i]);
             TextMeshProUGUI plantNameText = plantName.AddComponent<TextMeshProUGUI>();
             plantName.transform.SetParent(menuItemRectTransform, false);
             plantNameText.text = plants[i];
-            plantNameText.fontSize = 60;
+            plantNameText.fontSize = 30;
             plantNameText.color = Color.black;
         }
     }
