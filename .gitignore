@@ -1,4 +1,45 @@
 .DS_Store
+
+# Python byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+### Gradle ###
+.gradle
+**/build/
+
+# Unencrypted secret files
+google-services.json
+GoogleService-Info.plist
+uri_prefix.txt
+server_key.txt
+gcs_key_file.json
+
+# Folders for cmake/test output
+*_build/
+*_unity/
+*_unity_seperate/
+*_unity_separate/
+output/
+output_unpack*/
+UnityProject/BotanicLens/Assets/Firebase/**
+
+# Windows ignore
+vcpkg
+
+# Visual Studio Code
+.vscode/
+
+# Downloaded NDK
+ndk/
+ndk_zip
+
+# Downloaded EDM4U
+unity_jar_resolver/
+
+.DS_Store
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore

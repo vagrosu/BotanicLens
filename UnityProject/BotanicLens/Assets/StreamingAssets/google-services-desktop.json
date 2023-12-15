@@ -1,0 +1,32 @@
+{
+  "project_info": {
+    "project_number": "171085619099",
+    "firebase_url": "https://botaniclens-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "botaniclens",
+    "storage_bucket": "botaniclens.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171085619099:ios:67196467015e6eca248b3e",
+        "android_client_info": {
+          "package_name": "com.botaniclens.botaniclens"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLpvUQfbqAClJACPDn0xv2V8ZzYFa3dHo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
