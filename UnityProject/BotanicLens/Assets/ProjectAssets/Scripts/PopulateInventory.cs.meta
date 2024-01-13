@@ -3,8 +3,16 @@ guid: a2d26e8ac2a6f4ba9a9ca61ae51994d5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 0
+  defaultReferences:
+  - Bamboo: {instanceID: 0}
+  - bonsai: {instanceID: 0}
+  - cactus: {instanceID: 0}
+  - sunflower: {instanceID: 0}
+  - yucca: {instanceID: 0}
+  - echeveria: {instanceID: 0}
+  - kalanchoe: {instanceID: 0}
+  - orchid: {instanceID: 0}
+  executionOrder: 100
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 

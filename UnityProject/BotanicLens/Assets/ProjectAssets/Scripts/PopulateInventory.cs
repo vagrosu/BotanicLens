@@ -1,42 +1,45 @@
+
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PopulateInventory : MonoBehaviour
 {
-    List<string> plants = new List<string>
+    public GameObject Bamboo;
+    public GameObject Bonsai;
+    public GameObject Cactus;
+    public GameObject sunflower;
+    public GameObject Yucca;
+    public GameObject echeveria;
+    public GameObject Kalanchoe;
+    public GameObject orchid;
+
+
+
+    Dictionary<string, GameObject> allPlants = new Dictionary<string, GameObject>();
+
+    void Awake()
     {
-        "Cactus",
-        "Orchid",
-        "Bonsai",
-        "Echeveria",
-        "Bamboo",
-        "Yucca"
-    };
+        this.transform.position = new Vector2(0, 0);
+        allPlants.Add("Bamboo", Bamboo);
+        //allPlants.Add("Bonsai", Bonsai);
+        allPlants.Add("Cactus", Cactus);
+        allPlants.Add("Yucca", Yucca);
+        allPlants.Add("Kalanchoe", Kalanchoe);
 
-    void Start()
-    { 
-        for (int i = 0; i < plants.Count; i++)
+
+        int index = 0;
+        foreach( var pair in allPlants)
         {
-            GameObject menuItem = new GameObject("MenuItem");
-            menuItem.transform.SetParent(this.transform);
-            Image panelImage = menuItem.AddComponent<Image>();
-            panelImage.color = Color.white; // Set the panel color
+            InventoryItem menuTriggerer = new InventoryItem(pair.Key, index);
+            GameObject menuItem = menuTriggerer.spawnItem(this.transform);
 
-            // Set the panel's properties
-            RectTransform menuItemRectTransform = menuItem.GetComponent<RectTransform>();
-            menuItemRectTransform.sizeDelta = new Vector2(400, 400); // Set the panel size
-            menuItemRectTransform.anchoredPosition = new Vector2(-200 + 500 * (i % 2), -300 + 600 * Convert.ToInt32(i/2)); 
+            GameObject plant = Instantiate(pair.Value, menuItem.transform);
+            plant.transform.localPosition = new Vector3(0, 0.5f, 0);
+            plant.transform.localScale = new Vector3(0.25f, 0.5f, 0.25f);
+            plant.transform.SetParent(menuItem.transform);
 
-            GameObject plantName = new GameObject(plants[i]);
-            TextMeshProUGUI plantNameText = plantName.AddComponent<TextMeshProUGUI>();
-            plantName.transform.SetParent(menuItemRectTransform, false);
-            plantNameText.text = plants[i];
-            plantNameText.fontSize = 30;
-            plantNameText.color = Color.black;
+            index += 1;
         }
     }
 }
